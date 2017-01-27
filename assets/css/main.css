@@ -503,7 +503,7 @@ section#cover2 {
   height: 50%; }
   section#cover2 span {
     position: absolute;
-    bottom: 2px;
+    bottom: 0;
     left: 24px;
     font-size: 1.3em;
     color: #28B4BE;
