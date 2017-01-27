@@ -209,7 +209,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  overflow-x: hidden; }
 
 ::-moz-selection {
   background: #28B4BE; }
@@ -334,10 +335,14 @@ input[type="button"] {
 section#cover {
   position: relative;
   display: block;
-  background: url("../img/cover.jpg") center fixed;
+  background: url("../img/cover.jpg") center center;
   background-size: cover;
   width: 100%;
   height: 101%; }
+
+@media (max-width: 768px) {
+  .sections {
+    width: 100% !important; } }
 
 section.menu {
   position: fixed;
@@ -403,6 +408,70 @@ section.menu {
       color: #231F20;
       text-transform: uppercase; }
 
+@media (max-width: 960px) {
+  section.menu img.logo {
+    width: 100px; }
+  section.menu ul {
+    padding-left: 20px; }
+  section.menu .chats {
+    padding-left: 20px; } }
+
+@media (max-width: 768px) {
+  section.menu {
+    display: none; } }
+
+section.mobile-nav {
+  display: none;
+  background: #FFFFFF;
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  z-index: 3; }
+  section.mobile-nav img.logo {
+    display: block;
+    margin: 5px auto;
+    position: relative;
+    width: 120px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%); }
+  section.mobile-nav .hamburguer {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    left: 50px;
+      left-cursor: pointer; }
+
+.container {
+  display: inline-block; }
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s; }
+
+/* Rotate first bar */
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px); }
+
+/* Fade out the second bar */
+.change .bar2 {
+  opacity: 0; }
+
+/* Rotate last bar */
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px); }
+
+@media (max-width: 768px) {
+  section.mobile-nav {
+    display: block; } }
+
 section.text1 {
   position: relative;
   top: -6px;
@@ -428,7 +497,7 @@ section#cover2 {
   position: relative;
   top: -7px;
   display: block;
-  background: url("../img/cover2.jpg") center fixed;
+  background: url("../img/cover2.jpg") center center;
   background-size: cover;
   width: 100%;
   height: 50%; }

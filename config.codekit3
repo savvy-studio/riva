@@ -1172,6 +1172,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/assets\/css\/4-pages\/_menu-responsive.sass": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 2,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/css\/4-pages\/_menu-responsive.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/assets\/css\/4-pages\/_menu.sass": {
 		"aP": 0,
 		"bl": 0,
@@ -1287,6 +1300,14 @@
 		"oAP": "\/assets\/img\/cover.jpg",
 		"oF": 0,
 		"opt": 1
+		},
+	"\/assets\/img\/cover2.jpg": {
+		"ft": 16384,
+		"iS": 916604,
+		"oA": 0,
+		"oAP": "\/assets\/img\/cover2.jpg",
+		"oF": 0,
+		"opt": 0
 		},
 	"\/assets\/img\/riva-logo.svg": {
 		"ft": 2097152,
