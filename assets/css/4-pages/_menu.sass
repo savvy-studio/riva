@@ -1,0 +1,61 @@
+section.menu
+	position: fixed
+	z-index: 2
+	font-family: "Calibre"
+	font-weight: 600
+	font-size: 1.1em
+	background-color: $white
+	width: 18%
+	text-align: center
+	height: 100vh
+	box-shadow: 3px 0px 7px 0px rgba(50, 50, 50, 0.36)
+
+	img.logo
+		margin-top: 45px
+		width: 130px
+
+	ul
+		list-style: none
+		text-align: left
+		margin-top: 50px
+		padding-left: 50px
+		text-transform: uppercase
+
+		li
+			padding-bottom: 17px
+
+		a
+			text-decoration: none
+			cursor: pointer
+
+
+	.chats
+		text-align: left
+		padding-left: 50px
+
+		img.chat
+			width: 22px
+			animation: growin 1s ease forwards
+			@keyframes growin
+				0%
+					width: 30px
+
+				100%
+					width: 22px
+
+			&:hover
+				animation: grow 1s ease forwards
+
+			@keyframes grow
+				0%
+					width: 22px
+
+				100%
+					width: 30px
+
+
+
+		span.live
+			font-weight: 600
+			color: $black
+			text-transform: uppercase
