@@ -3,5 +3,6 @@ $(document).scroll(function () {
     var y = $(this).scrollTop();
     if (y > 300) {
         $('.text').fadeIn(1500);
+        $('section').removeClass("height");
     }
 });

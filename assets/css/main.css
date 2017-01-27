@@ -410,17 +410,19 @@ section.text1 {
   padding: 0;
   margin: 0;
   position: relative;
-  height: 360px;
   width: 100%; }
   section.text1 .text {
-    max-width: 600px;
+    max-width: 50%;
     display: none;
     padding: 70px;
     color: #FFFFFF;
     font-weight: 600;
-    font-size: 3em;
+    font-size: 2.5em;
     letter-spacing: 1px;
     line-height: 35pt; }
+
+.height {
+  height: 360px; }
 
 section#cover2 {
   position: relative;
