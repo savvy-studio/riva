@@ -1,0 +1,33 @@
+section.video
+	background: $blue
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	overflow-y: hidden
+	position: fixed
+	z-index: 5
+
+	video
+		width: 100vw
+
+	img
+		width: 400px
+		position: absolute
+		top: 40% !important
+		transform: translateY(-50%) !important
+		left: 50% !important
+		transform: translateX(-50%) !important
+		z-index: 6
+		animation: growww 2s ease-in-out  infinite
+
+
+@keyframes growww
+	0%
+		width: 400px
+
+	50%
+		width: 450px
+
+	100%
+		width: 400px
