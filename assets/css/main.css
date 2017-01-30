@@ -421,27 +421,54 @@ section.menu {
     display: none; } }
 
 section.mobile-nav {
+  opacity: .9;
   display: none;
   background: #FFFFFF;
+  position: absolute;
   height: 100px;
+  overflow: hidden;
   width: 100%;
   position: fixed;
   z-index: 3; }
   section.mobile-nav img.logo {
     display: block;
-    margin: 5px auto;
     position: relative;
-    width: 120px;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%); }
+    top: 40px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 120px; }
   section.mobile-nav .hamburguer {
     position: absolute;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
+    top: 30px;
     left: 50px;
       left-cursor: pointer; }
+  section.mobile-nav .links-mobil {
+    display: none;
+    position: relative;
+    margin-top: 10%; }
+    section.mobile-nav .links-mobil ul {
+      text-align: center;
+      line-height: 70px;
+      font-weight: 600;
+      font-size: 1.5em;
+      text-transform: uppercase;
+      list-style: none; }
+      section.mobile-nav .links-mobil ul li {
+        color: #28B4BE; }
+
+section.mobile-nav-click {
+  height: 100%;
+  -webkit-animation: drop 1s ease forwards;
+          animation: drop 1s ease forwards; }
+  section.mobile-nav-click .links-mobil {
+    display: none;
+    position: relative;
+    top: 40%;
+    -webkit-transform: translateY(-40%);
+            transform: translateY(-40%);
+    -webkit-animation: links 4s ease forwards;
+            animation: links 4s ease forwards; }
 
 .container {
   display: inline-block; }
@@ -472,6 +499,42 @@ section.mobile-nav {
   section.mobile-nav {
     display: block; } }
 
+@-webkit-keyframes drop {
+  0% {
+    height: 100px; }
+  100% {
+    height: 100%; } }
+
+@keyframes drop {
+  0% {
+    height: 100px; }
+  100% {
+    height: 100%; } }
+
+@-webkit-keyframes up {
+  0% {
+    height: 100px; }
+  100% {
+    height: 100%; } }
+
+@keyframes up {
+  0% {
+    height: 100px; }
+  100% {
+    height: 100%; } }
+
+@-webkit-keyframes links {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes links {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
 section.text1 {
   position: relative;
   top: -6px;
@@ -492,6 +555,10 @@ section.text1 {
 
 .height {
   height: 360px; }
+
+@media (max-width: 768px) {
+  section.text1 .text {
+    max-width: 100%; } }
 
 section#cover2 {
   position: relative;

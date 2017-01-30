@@ -13,9 +13,9 @@
     <img class="logo" src="assets/img/riva-logo.svg" alt="logo riva" />
 
     <ul>
-      <a><li>master plan</li></a>
-      <a><li>amenidades</li></a>
-      <a><li>departamentos</li></a>
+      <a href="#cover"><li>master plan</li></a>
+      <a href="#text"><li>amenidades</li></a>
+      <a href="#cover2"><li>departamentos</li></a>
       <a><li>highlights</li></a>
       <a><li>nosotros</li></a>
       <a><li>contacto</li></a>
@@ -30,27 +30,34 @@
 
   </section>
 
-  <section class="mobile-nav container">
-    <div class="hamburguer" onclick="myFunction(this)">
+  <section class="mobile-nav container" id="mobil" onclick="myFunction(this)">
+    <div class="hamburguer">
       <div class="bar1"></div>
       <div class="bar2"></div>
       <div class="bar3"></div>
     </div>
 
     <img class="logo" src="assets/img/riva-logo.svg" alt="logo riva" />
+
+    <div class="links-mobil">
+      <ul>
+        <a href="#cover"><li>master plan</li></a>
+        <a href="#text"><li>amenidades</li></a>
+        <a href="#cover2"><li>departamentos</li></a>
+        <a><li>highlights</li></a>
+        <a><li>nosotros</li></a>
+        <a><li>contacto</li></a>
+      </ul>
+    </div>
   </section>
-  <script>
-    function myFunction(x) {
-        x.classList.toggle("change");
-    }
-  </script>
+
 
   <div class="sections">
 
     <section id="cover" class="sections">
     </section>
 
-    <section class="text1 height">
+    <section class="text1 height" id="text">
       <div class="text">
         <span class="uno">Edificio residencial</span>
         <br />
@@ -85,6 +92,17 @@
 
 </div >
 
+
+<script>
+  function myFunction(x) {
+    x.classList.toggle("change");
+    x.classList.toggle("mobile-nav-click");
+    $('.links-mobil').toggle(function(){
+      $('.links-mobil').show();
+    });
+  }
+
+</script>
 
 <script src="assets/js/jquery-2.1.4.min.js"></script>
 <script src="assets/js/functions.js" type="text/javascript"></script>
