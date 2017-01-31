@@ -28,6 +28,6 @@ $(document).scroll(function () {
 
     setTimeout(function() {
       $("section.video").fadeOut(2000);
-    }, 7000);
+    }, 6000);
 
   });
